@@ -1,0 +1,25 @@
+= Config =
+    * settings/platform_setup.vim
+    * coc-settings.json
+    * Make sure this folder is in rtp for colorscheme to work
+    * For semshi to work need to run `:UpdateRemotePlugins` after installing plugins
+
+= External Software needed =
+    * node for coc
+    * AG (The silver searcher)
+    * bash (for preview in FZF)
+    * bat (for syntax highlighting in FZF)
+    * pynvim (for python support in neovim)
+    * black (python formatter)
+    * Coc plugins:
+        * Run `:CocInstall coc-pyright`
+        * Run `:CocInstall coc-go`
+
+= Others =
+    * Iosevka Medium Font setup in `settings/interface.vim`
+
+= Things that need to be fixed =
+    * Coc suggestion window color needs to be different in nvim-qt
+    * Setup a project manager and a startup screen
+    * Make nvim config more portable
+    * Pick go or lua for external language
