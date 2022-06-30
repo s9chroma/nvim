@@ -5,3 +5,5 @@ require("plugins.config.fugitive")
 require("plugins.config.nvimtree")
 require("plugins.config.lightline")
 require("plugins.config.treesitter")
+
+require'colorizer'.setup()

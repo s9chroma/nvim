@@ -12,7 +12,6 @@ vim.opt.guifont = { "FiraCode Nerd Font", ":h16" }
 opt.mouse = 'a' -- Enable mouse support
 opt.clipboard = 'unnamedplus' -- Copy/paste to system clipboard
 opt.swapfile = false -- Don't use swapfile
-opt.termguicolors = true -- 24 bit colors in TUI
 opt.nofoldenable = true -- disable folding
 opt.signcolumn = 'number'
 

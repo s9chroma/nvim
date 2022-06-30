@@ -20,6 +20,9 @@ packer.startup(function(use)
             -- `:TSUpdate`
     use 'nvim-treesitter/nvim-treesitter'
 
+    -- Hex color highlighter
+    use 'norcalli/nvim-colorizer.lua'
+
     -- emacs kill-buffer
     use 'qpkorr/vim-bufkill'
 
