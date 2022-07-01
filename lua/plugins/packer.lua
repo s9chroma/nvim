@@ -13,6 +13,8 @@ packer.startup(function(use)
         -- Run `:CocInstall coc-pyright`
         -- Run `:CocInstall coc-go`
     use { 'neoclide/coc.nvim', branch='release' }
+    -- Auto close brackets
+    use 'jiangmiao/auto-pairs'
 
     -- Treesitter Dependencies:
         -- C compiler (gcc/clang/cl/zig)

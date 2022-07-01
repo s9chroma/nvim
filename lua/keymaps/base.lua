@@ -64,6 +64,7 @@ map('n', '<Leader>w', ':up<CR>')                      -- Update file i.e. write 
 map('n', '<Leader>q', ':q<CR>')                       -- Quit
 map('n', '<Leader>db', ':BD<CR>')                     -- Delete buffer
 map('n', 'gF', '<C-W>gf')                             -- Go to file under cursor in new tab
+map('n', '<Leader>c', 'zz')                           -- Center cursor position
 
 --------------------------------------------------------------------------------------------------------
 vim.g.mapleader = ','                                 -- Changing leader back to comma for others
