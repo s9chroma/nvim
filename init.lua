@@ -1,5 +1,5 @@
 require("settings")
 require("plugins")
-require("languages")
+require("autocmds")
 require("keymaps")
 require("s9colors")

@@ -11,6 +11,7 @@ api.nvim_create_autocmd("FileType", {
 api.nvim_create_autocmd("BufWritePost", {
     pattern = "*.go",
     callback = function()
-        vim.cmd[[silent %!goimports<CR>:w<CR>]]
+        vim.cmd[[silent %!goimports]]
+        vim.cmd[[silent w]]
     end
 })

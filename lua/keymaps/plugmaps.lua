@@ -14,6 +14,11 @@ map('n', '<Leader>a', ':Rg<CR>') -- Ripgrep
 -- NvimTree Keybinds
 map('n', '<Leader>t', ':NvimTreeToggle<CR>')
 
+-- Toggleterm Keybinds
+map('n', '<C-t>', ':ToggleTerm<CR>')
+map('i', '<C-t>', ':ToggleTerm<CR>')
+map('t', '<C-t>', [[<C-\><C-n>:ToggleTerm<CR>]])
+
 -- Coc Keybinds
 function ShowDocumentation() 
     if vim.fn.CocAction('hasProvider', 'hover') then

@@ -8,6 +8,10 @@ packer.startup(function(use)
     use { "junegunn/fzf", run = ":call fzf#install()" }
 	use {'junegunn/fzf.vim'}
 
+    use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+        require("toggleterm").setup()
+    end}
+
     -- Completion
     -- Post Install
         -- Run `:CocInstall coc-pyright`
@@ -15,6 +19,9 @@ packer.startup(function(use)
     use { 'neoclide/coc.nvim', branch='release' }
     -- Auto close brackets
     use 'jiangmiao/auto-pairs'
+
+    -- Python formatter
+    use {"psf/black",  branch= 'stable' }
 
     -- Treesitter Dependencies:
         -- C compiler (gcc/clang/cl/zig)
