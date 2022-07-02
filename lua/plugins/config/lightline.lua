@@ -12,5 +12,8 @@ g_opt.lightline = {
             {'percent'},
             {'filetype'}
         }
+    },
+    component_function = {
+        gitbranch = 'gitbranch#name'
     }
 }

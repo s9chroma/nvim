@@ -8,6 +8,7 @@ packer.startup(function(use)
     use { "junegunn/fzf", run = ":call fzf#install()" }
 	use {'junegunn/fzf.vim'}
 
+    -- Floating Terminal
     use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
         require("toggleterm").setup()
     end}
@@ -21,7 +22,7 @@ packer.startup(function(use)
     use 'jiangmiao/auto-pairs'
 
     -- Python formatter
-    use {"psf/black",  branch= 'stable' }
+    use "psf/black"
 
     -- Treesitter Dependencies:
         -- C compiler (gcc/clang/cl/zig)
@@ -36,25 +37,18 @@ packer.startup(function(use)
     use 'qpkorr/vim-bufkill'
 
     -- Wiki / Diary
-    use 'vimwiki/vimwiki'
+    use {
+        'vimwiki/vimwiki', branch = 'dev',
+    }
 
     -- tpope tools
     use 'tpope/vim-repeat'
+    use 'tpope/vim-vinegar'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-surround'
     use 'tpope/vim-commentary'
 
     -- Status bar
     use 'itchyny/lightline.vim'
-
-    -- File Tree
-    -- Dependencies:
-        -- https://www.nerdfonts.com/ Fira Code Nerd Font
-    use {
-        'kyazdani42/nvim-tree.lua',
-        requires = {
-          'kyazdani42/nvim-web-devicons', -- optional, for file icons
-        },
-        tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
+    use 'itchyny/vim-gitbranch'
 end)

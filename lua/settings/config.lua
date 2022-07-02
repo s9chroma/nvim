@@ -21,6 +21,11 @@ opt.signcolumn = 'number'
 g_opt.neovide_cursor_vfx_mode = "wireframe" -- v. cool
 
 ------------------------------------------------
+-- Netrw
+------------------------------------------------
+g_opt.netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
+------------------------------------------------
 -- Neovim UI
 ------------------------------------------------
 opt.number = true -- Show line number
@@ -84,10 +89,10 @@ local disabled_built_ins = {
    "getscriptPlugin",
    "gzip",
    "logipat",
-   "netrw",
-   "netrwPlugin",
-   "netrwSettings",
-   "netrwFileHandlers",
+   -- "netrw",
+   -- "netrwPlugin",
+   -- "netrwSettings",
+   -- "netrwFileHandlers",
    "matchit",
    "tar",
    "tarPlugin",

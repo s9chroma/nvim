@@ -11,13 +11,27 @@ map('n', '<Leader>g', ':Files ../<CR>') -- FZF in current directory
 map('n', '<Leader>b', ':Buffers<CR>') -- Current open buffers
 map('n', '<Leader>a', ':Rg<CR>') -- Ripgrep
 
--- NvimTree Keybinds
-map('n', '<Leader>t', ':NvimTreeToggle<CR>')
-
 -- Toggleterm Keybinds
 map('n', '<C-t>', ':ToggleTerm<CR>')
 map('i', '<C-t>', ':ToggleTerm<CR>')
 map('t', '<C-t>', [[<C-\><C-n>:ToggleTerm<CR>]])
+
+-- Fugitive bindings
+map('n', '<Leader>Ga', ':Git add %:p<CR><CR>')
+map('n', '<Leader>Gs', ':G<CR>')
+map('n', '<Leader>Gc', ':Git commit -v -q<CR>')
+map('n', '<Leader>Gt', ':Git commit -v -q %:p<CR>')
+map('n', '<Leader>Gd', ':Git diff<CR>')
+map('n', '<Leader>Ge', ':Git edit<CR>')
+map('n', '<Leader>Gr', ':Git read<CR>')
+map('n', '<Leader>Gw', ':Git write<CR><CR>')
+map('n', '<Leader>Gl', ':silent! Git log<CR>:bot copen<CR>')
+map('n', '<Leader>Gp', ':Git grep<Space>')
+map('n', '<Leader>Gm', ':Git move<Space>')
+map('n', '<Leader>Gb', ':Git branch<Space>')
+map('n', '<Leader>Go', ':Git checkout<Space>')
+map('n', '<Leader>Gps', ':Dispatch! Git push<CR>')
+map('n', '<Leader>Gpl', ':Dispatch! Git pull<CR>')
 
 -- Coc Keybinds
 function ShowDocumentation() 

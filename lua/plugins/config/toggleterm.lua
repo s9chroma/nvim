@@ -8,9 +8,6 @@ require('toggleterm').setup({
         end
     end,
     hide_numbers = false,
-    on_open = function()
-        print("TESTING")
-    end,
     shade_terminals = true,
     start_in_insert = true,
     insert_mappings = false, -- no default mapping
@@ -18,7 +15,7 @@ require('toggleterm').setup({
     persist_mode = true,
     direction = 'float',
     close_on_exit = true,
-    shell = 'bash',
+    shell = toggle_shell,
     float_opts = {
         border = 'curved',
         highlights = {
