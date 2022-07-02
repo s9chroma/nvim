@@ -39,7 +39,7 @@ opt.linebreak = true -- Wrap on word boundary
 opt.termguicolors = true -- Enable 24-bit RGB colors
 opt.laststatus=3 -- Set global statusline
 opt.scrolloff = 5 -- Scroll offset
-opt.fillchars = [[vert: ,eob: ,horiz: ]] -- Remove lines between splits
+opt.fillchars = [[vert:┃,eob: ,horiz:━]] -- Remove lines between splits
 
 ------------------------------------------------
 -- Tabs, indent

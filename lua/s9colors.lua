@@ -90,7 +90,7 @@ local syntax = {
   Terminal    = {fg = s.fg,bg=s.bg},
   SignColumn  = {fg=s.fg,bg=s.bg},
   FoldColumn  = {fg=s.fg_idle,bg=s.bg},
-  VertSplit   = {fg=s.bg,bg=s.bg},
+  VertSplit   = {fg=s.fg,bg=s.bg},
   Folded      = {fg=s.white,bg=s.selection},
   EndOfBuffer = {fg=s.bg,bg=s.none},
   IncSearch   = {fg=s.white,bg=s.selection},

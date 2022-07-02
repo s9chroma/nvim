@@ -30,8 +30,8 @@ map('n', '<Leader>Gp', ':Git grep<Space>')
 map('n', '<Leader>Gm', ':Git move<Space>')
 map('n', '<Leader>Gb', ':Git branch<Space>')
 map('n', '<Leader>Go', ':Git checkout<Space>')
-map('n', '<Leader>Gps', ':Dispatch! Git push<CR>')
-map('n', '<Leader>Gpl', ':Dispatch! Git pull<CR>')
+map('n', '<Leader>Gps', ':Git push<CR>')
+map('n', '<Leader>Gpl', ':Git pull<CR>')
 
 -- Coc Keybinds
 function ShowDocumentation() 
