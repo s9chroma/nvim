@@ -1,0 +1,12 @@
+= External Software Needed =
+    * [[https://github.com/BurntSushi/ripgrep|Ripgrep]]
+    * [[https://github.com/junegunn/fzf|FZF]]
+    * [[https://nodejs.org/en/|NodeJS]]
+    * [[https://github.com/wbthomason/packer.nvim|Packer]] 
+    * C compiler in path (gcc/clang/cl/zig) for Treesitter
+
+= After Packer Sync = 
+    * `CocInstall coc-go`
+    * `CocInstall coc-lua`
+    * `CocInstall coc-pyright`
+    * `TSUpdate`
