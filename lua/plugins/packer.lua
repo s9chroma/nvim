@@ -33,11 +33,6 @@ packer.startup(function(use)
     -- emacs kill-buffer
     use "qpkorr/vim-bufkill"
 
-    -- Wiki / Diary
-    use {
-        "vimwiki/vimwiki", branch = 'dev',
-    }
-
     -- tpope tools
     use "tpope/vim-repeat"
     use "tpope/vim-vinegar"
