@@ -8,10 +8,10 @@ api.nvim_create_autocmd("FileType", {
     end
 })
 
+vim.o.shortmess = 'a'
 api.nvim_create_autocmd("BufWritePost", {
     pattern = "*.go",
     callback = function()
-        vim.cmd[[silent %!goimports]]
-        vim.cmd[[silent w]]
+        vim.cmd[[silent! execute "!goimports -w %" | redraw!]]
     end
 })

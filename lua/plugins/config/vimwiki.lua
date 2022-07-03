@@ -15,6 +15,7 @@ vim.g.vimwiki_list = {
         path = vimwiki_path .. 'source/', 
         path_html = vimwiki_path, 
         auto_toc = 1,
+        auto_tags = 1,
         template_path = vimwiki_path .. [[source/templates]], 
         template_default = 'def',
         template_ext = '.tpl'

@@ -11,11 +11,6 @@ map('n', '<Leader>g', ':Files ../<CR>') -- FZF in current directory
 map('n', '<Leader>b', ':Buffers<CR>') -- Current open buffers
 map('n', '<Leader>a', ':Rg<CR>') -- Ripgrep
 
--- Toggleterm Keybinds
-map('n', '<C-t>', ':ToggleTerm<CR>')
-map('i', '<C-t>', ':ToggleTerm<CR>')
-map('t', '<C-t>', [[<C-\><C-n>:ToggleTerm<CR>]])
-
 -- Fugitive bindings
 map('n', '<Leader>Ga', ':Git add %:p<CR><CR>')
 map('n', '<Leader>Gs', ':G<CR>')
@@ -71,6 +66,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 -- Go to code navigation
 map('n', 'gd', ':vsp<CR><Plug>(coc-definition)')
+map('n', 'gD', ':sp<CR><Plug>(coc-definition)')
 map('n', 'gr', '<Plug>(coc-references)')
 
 -- Symbol renaming

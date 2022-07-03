@@ -4,17 +4,9 @@ packer.startup(function(use)
     -- Packer can manage itself
     use "wbthomason/packer.nvim"
 
-    -- colorscheme
-    use ({'RRethy/nvim-base16'})
-
     -- Fuzzy file finder
     use {"junegunn/fzf", run = ":call fzf#install()" }
 	use {"junegunn/fzf.vim"}
-
-    -- Floating Terminal
-    use {"akinsho/toggleterm.nvim", tag = "v1.*", config = function()
-        require("toggleterm").setup()
-    end}
 
     -- Completion
     -- Post Install
@@ -56,7 +48,4 @@ packer.startup(function(use)
     -- Status bar
     use "itchyny/lightline.vim"
     use "itchyny/vim-gitbranch"
-
-    -- Local plugins
-    use "~/Desktop/Work/first-nvim-plugin"
 end)
