@@ -5,7 +5,7 @@ local g_opt = vim.g
 -- Interface
 ------------------------------------------------
 vim.opt.guifont = { "FiraCode Nerd Font", ":h16" }
-vim.cmd[[colorscheme s9]]
+-- vim.cmd[[colorscheme s9]]
 
 ------------------------------------------------
 -- General
@@ -15,6 +15,7 @@ opt.clipboard = 'unnamedplus' -- Copy/paste to system clipboard
 opt.swapfile = false -- Don't use swapfile
 opt.nofoldenable = true -- disable folding
 opt.signcolumn = 'number'
+opt.showtabline = 2
 
 ------------------------------------------------
 -- Neovide Settings

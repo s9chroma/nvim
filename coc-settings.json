@@ -6,5 +6,4 @@
     "coc.preferences.formatOnSaveFiletypes": ["python"],
     "python.pythonPath": "C:\\Users\\pavan\\miniconda3\\envs\\s9\\python",
     "python.formatting.blackPath": "C:\\Users\\pavan\\miniconda3\\envs\\s9\\Scripts\\black.exe",
-    "flutter.provider.hot-reload": false
 }
