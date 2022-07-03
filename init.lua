@@ -2,4 +2,4 @@ require("settings")
 require("plugins")
 require("autocmds")
 require("keymaps")
-require("s9colors")
+

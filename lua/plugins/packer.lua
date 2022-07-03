@@ -4,6 +4,9 @@ packer.startup(function(use)
     -- Packer can manage itself
     use "wbthomason/packer.nvim"
 
+    -- colorscheme
+    use ({'RRethy/nvim-base16'})
+
     -- Fuzzy file finder
     use {"junegunn/fzf", run = ":call fzf#install()" }
 	use {"junegunn/fzf.vim"}
@@ -17,6 +20,7 @@ packer.startup(function(use)
     -- Post Install
         -- Run `:CocInstall coc-pyright`
         -- Run `:CocInstall coc-go`
+        -- Run `:CocInstall coc-lua`
     use {"neoclide/coc.nvim", branch="release" }
 
     -- Auto close brackets
@@ -52,4 +56,7 @@ packer.startup(function(use)
     -- Status bar
     use "itchyny/lightline.vim"
     use "itchyny/vim-gitbranch"
+
+    -- Local plugins
+    use "~/Desktop/Work/first-nvim-plugin"
 end)

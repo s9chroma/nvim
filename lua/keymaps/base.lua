@@ -51,7 +51,7 @@ map('n', '<Leader>6', '6gt')                          -- Go to tab 6
 map('n', '<Leader>7', '7gt')                          -- Go to tab 7
 map('n', '<Leader>8', '8gt')                          -- Go to tab 8
 map('n', '<Leader>9', '9gt')                          -- Go to tab 9
-map('n', '<Leader>T', '<C-W>T')                       -- Open current buffer in new tab
+map('n', '<Leader>N', '<C-W>T')                       -- Open current buffer in new tab
 map('n', '<C-right>', ':tabnext<CR><CR>')             -- Move to next tab
 map('n', '<C-left>', ':tabprevious<CR><CR>')          -- Move to previous tab
 map('n', '<Leader>m', ':tab ')                        -- Command in new tab prompt
@@ -66,7 +66,7 @@ map('n', '<Leader>db', ':BD<CR>')                     -- Delete buffer
 map('n', 'gF', '<C-W>gf')                             -- Go to file under cursor in new tab
 map('n', '<Leader>c', 'zz')                           -- Center cursor position
 map('n', '<Leader>t', ':Vex!<CR>')                       -- Netrw
-map('n', '<Leader>T', ':Sex<CR>')                        -- Netrw
+map('n', '<Leader>T', ':Sex<CR>')                        -- Netrw xd
 map('n', '<Leader>y', ':Tex<CR>')                        -- Netrw
 map('n', '<Leader>e', ':!start explorer /select,%:p<CR><CR>')  -- Open file explorer
 
